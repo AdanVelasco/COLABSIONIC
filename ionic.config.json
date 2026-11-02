@@ -1,0 +1,7 @@
+{
+  "name": "colabsionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

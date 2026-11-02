@@ -1,0 +1,100 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Colaboradores    
+    </ion-title>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Buscar Colaborador..."></ion-searchbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+@if (sihay) {
+
+<ion-list >
+  <ion-item button detail="true">
+    <ion-avatar slot="start">
+     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
+    </ion-avatar>
+      <ion-label>
+        <h2>Ana García</h2>
+        <p>Desarrolladora</p>
+      </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list >
+  <ion-item button detail="true">
+    <ion-avatar slot="start">
+     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
+    </ion-avatar>
+      <ion-label>
+        <h2>Carlos López</h2>
+        <p>Diseñador</p>
+      </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list >
+  <ion-item button detail="true">
+    <ion-avatar slot="start">
+     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
+    </ion-avatar>
+      <ion-label>
+        <h2>Maria Rodríguez</h2>
+        <p>Product Manager</p>
+      </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list >
+  <ion-item button detail="true">
+    <ion-avatar slot="start">
+     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
+    </ion-avatar>
+      <ion-label>
+        <h2>Juan Pérez</h2>
+        <p>QA</p>
+      </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list >
+  <ion-item button detail="true">
+    <ion-avatar slot="start">
+     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Avatar">
+    </ion-avatar>
+      <ion-label>
+        <h2>Laura Tórres</h2>
+        <p>Marketing</p>
+      </ion-label>
+  </ion-item>
+</ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button  (click)="Agregar_Colaboradores()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+}
+@else{
+  <div class="splash-container">
+
+    <div class="contenido">
+      <ion-icon name="people-sharp" class="icono"></ion-icon>
+
+      <h1>Aun no hay Colaboradores</h1>
+
+      <p>Comienza Agregando tu primer<br>Colaborador</p>
+    </div>
+
+    <ion-button expand="block" (click)="Agregar_Colaboradores()">
+      Agregar Colaborador
+    </ion-button>
+  </div>
+
+}
+</ion-content>

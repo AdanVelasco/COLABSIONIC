@@ -1,0 +1,80 @@
+
+ion-content {
+  --background: #ffffff;
+}
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #222222;
+}
+
+ion-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px auto 25px;
+  width: 110px;
+  height: 110px;
+}
+
+.foto ion-icon:first-child {
+  font-size: 105px;
+  color: #d1d1d1;
+}
+
+.foto .camara {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  background: #3880ff;
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 22px;
+}
+
+ion-label {
+  display: block;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0 5px;
+}
+
+ion-input,
+ion-select {
+  display: block;
+  border: 1px solid #d5d5d5;
+  border-radius: 9px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  min-height: 46px;
+  color: #333333;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+ion-select {
+  width: 100%;
+  max-width: 100%;
+}
+
+.guardar {
+  margin-top: 20px;
+  height: 48px;
+  font-weight: bold;
+  --border-radius: 10px;
+  --background: #3880ff;
+}
+
+ion-content {
+  --background: #ffffff;
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
